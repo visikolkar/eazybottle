@@ -8,7 +8,7 @@ angular.module('eazybottle', ['ui.router'])
 
             .state('home', {
                 url: '/home',
-                templateUrl: 'templates/home.md',
+                templateUrl: 'templates/home.html',
                 controller: 'HomeCtrl'
             })
 
