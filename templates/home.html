@@ -1,0 +1,242 @@
+<div class="container-fluid" ng-style="viewport" style="text-align:center; width:auto!important">
+    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel" ng-style="phoneHeight" style="z-index:10; margin: 0 auto; padding-top: 40px!important;">
+        <div class="logo">
+            <img src="img/ic_launcher.png" width="100" height="100">
+            <h6 style="color:aliceblue;">#DrinkWaterAtEazyBottle</h6>
+        </div>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img src="img/home.png" alt="First slide" width="{{mobileWidth}}" height="{{mobileHeight}}">
+            </div>
+            <div class="carousel-item">
+                <img src="img/wallet.png" alt="Second slide" width="{{mobileWidth}}" height="{{mobileHeight}}">
+            </div>
+            <div class="carousel-item">
+                <img src="img/auto.png" alt="Third slide" width="{{mobileWidth}}" height="{{mobileHeight}}">
+            </div>
+            <div class="carousel-item">
+                <img src="img/address.png" alt="Fourth slide" width="{{mobileWidth}}" height="{{mobileHeight}}">
+            </div>
+            <div class="carousel-item">
+                <img src="img/account.png" alt="Fifth slide" width="{{mobileWidth}}" height="{{mobileHeight}}">
+            </div>
+        </div>
+    </div>
+    <canvas id="bg-particles" class="bg-particles"></canvas>
+</div>
+<section class="section-padding">
+    <div class="container" style="text-align:center;">
+        <h1 style="color:rgb(44, 62, 80)!important;">Water, Wallet & EazyBottle</h1>
+        <!--<h6 class="description">With supporting text below as a natural lead-in to additional content With supporting text below as a natural lead-in to additional content With supporting text below as a natural lead-in to additional content</h6>-->
+        <div class="row text-center" style="padding-top: 40px">
+            <div class="col-sm-4">
+                <img src="img/badge1.png" width="100" height="100">
+                <h4 style="padding-top: 10px">Water</h4>
+                <p>Enjoy the EazyBottle's confidence of drinking water from certified vendors. Know the water through the reports.</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/badge2.png" width="100" height="100">
+                <h4 style="padding-top: 10px">Wallet</h4>
+                <p>Water Wallet is designed for noble you. Now you can save money on drinking water like never before. Wallet
+                    has many advantages.</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/badge3.png" width="100" height="100">
+                <h4 style="padding-top: 10px">EazyBottle</h4>
+                <p>Tired of waiting for your local distributor for Water!? Not anymore EazyBottle arrives to your doorstep automatically.
+                    Use Auto Delivery designed for noble you.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-padding">
+    <div class="container text-center">
+        <h1 style="color:#00BCD4">Get your first bottle for FREE. Hurry Up!</h1>
+        <p>Click to download your FREE app on play store</p>
+        <a href="https://play.google.com/store/apps/details?id=com.eazybottle.android"><button type="button" class="btn btn-info"><img src="img/google_play.png" width="50" height="50"> <h5 style="display:inline-block!important; padding:10px;text-shadow: 2px 2px 3px rgba(255,255,255,0.5);-webkit-background-clip: text; color:black">Get Delivery Now</h5></button></a>
+    </div>
+</section>
+<!-- <section class="section-padding">
+
+    <div class="container text-center">
+        <div class="section-padding card" style="background: linear-gradient(to left, rgb(44, 62, 80), rgb(52, 152, 219)); box-shadow:0 0px 0px 0 rgba(0,0,0,.16), 0 0px 0px 0 rgba(0,0,0,.12)!important">
+            <h4 style="text-align:center; color:aliceblue"> Our Community</h4>
+            <div class="row flex-row flex-nowrap" style=" outline: none;overflow-x:scroll;
+            overflow-y:hidden;">
+                <div class="container" style="background-image: url(../img/1.png);
+            background-repeat: repeat; padding:10px!important" ng-repeat="review in reviews">
+                    <div class="card" style="background:transparent!important;">
+                        <div class="card-body">
+
+                            <h6 class="card-title" style="padding-top: 10px!important">{{review.name}} &nbsp; &nbsp; <span style="font-size:100%;color:#00BCD4;">&starf;&starf;&starf;&starf;&starf;</span></h6>
+                            <hr>
+
+                            <p><i class="fa fa-quote-left"></i> {{review.review}} </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<section class="container p-t-3">
+    <div class="row">
+        <div class="col-lg-6">
+            <h1 style="color:rgb(44, 62, 80)!important;">Our Community</h1>
+        </div>
+        <div class="col-lg-6 col-xs-6 text-md-right lead">
+            <a class="btn btn-outline-info prev" href="" title="go back" style="border-width:1px!important"><i class="fa fa-lg fa-chevron-left"></i></a>
+            <a class="btn btn-outline-info next" href="" title="more" style="border-width:1px!important"><i class="fa fa-lg fa-chevron-right"></i></a>
+        </div>
+    </div>
+</section>
+<section class="carousel slide" data-ride="carousel" id="postsCarousel">
+    <div class="container p-t-0 m-t-2 carousel-inner text-center" style="padding:10px;">
+        <div class="row row-equal carousel-item active m-t-0" style="margin:0 auto">
+            <div class="col-md-4">
+                <div class="card" style="background:transparent!important;">
+                    <div class="card-body">
+
+                        <h6 class="card-title" style="padding-top: 10px!important">{{reviews[$index+0].name}} &nbsp; &nbsp; <span style="font-size:100%;color:#00BCD4;">&starf;&starf;&starf;&starf;&starf;</span></h6>
+                        <hr>
+
+                        <p><i class="fa fa-quote-left"></i> {{reviews[$index+0].review}} </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="background:transparent!important;">
+                    <div class="card-body">
+
+                        <h6 class="card-title" style="padding-top: 10px!important">{{reviews[$index+1].name}} &nbsp; &nbsp; <span style="font-size:100%;color:#00BCD4;">&starf;&starf;&starf;&starf;&starf;</span></h6>
+                        <hr>
+
+                        <p><i class="fa fa-quote-left"></i> {{reviews[$index+1].review}} </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="background:transparent!important;">
+                    <div class="card-body">
+
+                        <h6 class="card-title" style="padding-top: 10px!important">{{reviews[$index+2].name}} &nbsp; &nbsp; <span style="font-size:100%;color:#00BCD4;">&starf;&starf;&starf;&starf;&starf;</span></h6>
+                        <hr>
+
+                        <p><i class="fa fa-quote-left"></i> {{reviews[$index+2].review}} </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-equal carousel-item m-t-0" style="margin:0 auto">
+            <div class="col-md-4">
+                <div class="card" style="background:transparent!important;">
+                    <div class="card-body">
+
+                        <h6 class="card-title" style="padding-top: 10px!important">{{reviews[$index+3].name}} &nbsp; &nbsp; <span style="font-size:100%;color:#00BCD4;">&starf;&starf;&starf;&starf;&starf;</span></h6>
+                        <hr>
+
+                        <p><i class="fa fa-quote-left"></i> {{reviews[$index+3].review}} </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="background:transparent!important;">
+                    <div class="card-body">
+
+                        <h6 class="card-title" style="padding-top: 10px!important">{{reviews[$index+4].name}} &nbsp; &nbsp; <span style="font-size:100%;color:#00BCD4;">&starf;&starf;&starf;&starf;&starf;</span></h6>
+                        <hr>
+
+                        <p><i class="fa fa-quote-left"></i> {{reviews[$index+4].review}} </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 fadeIn wow">
+                <div class="card" style="background:transparent!important;">
+                    <div class="card-body">
+
+                        <h6 class="card-title" style="padding-top: 10px!important">{{reviews[$index+5].name}} &nbsp; &nbsp; <span style="font-size:100%;color:#00BCD4;">&starf;&starf;&starf;&starf;&starf;</span></h6>
+                        <hr>
+
+                        <p><i class="fa fa-quote-left"></i> {{reviews[$index+5].review}} </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-equal carousel-item m-t-0" style="margin:0 auto">
+            <div class="col-md-4">
+                <div class="card" style="background:transparent!important;">
+                    <div class="card-body">
+
+                        <h6 class="card-title" style="padding-top: 10px!important">{{reviews[$index+6].name}} &nbsp; &nbsp; <span style="font-size:100%;color:#00BCD4;">&starf;&starf;&starf;&starf;&starf;</span></h6>
+                        <hr>
+
+                        <p><i class="fa fa-quote-left"></i> {{reviews[$index+6].review}} </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="background:transparent!important;">
+                    <div class="card-body">
+
+                        <h6 class="card-title" style="padding-top: 10px!important">{{reviews[$index+7].name}} &nbsp; &nbsp; <span style="font-size:100%;color:#00BCD4;">&starf;&starf;&starf;&starf;&starf;</span></h6>
+                        <hr>
+
+                        <p><i class="fa fa-quote-left"></i> {{reviews[$index+7].review}} </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 fadeIn wow">
+                <div class="card" style="background:transparent!important;">
+                    <div class="card-body">
+
+                        <h6 class="card-title" style="padding-top: 10px!important">{{reviews[$index+8].name}} &nbsp; &nbsp; <span style="font-size:100%;color:#00BCD4;">&starf;&starf;&starf;&starf;&starf;</span></h6>
+                        <hr>
+
+                        <p><i class="fa fa-quote-left"></i> {{reviews[$index+8].review}} </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="section-padding">
+    <div class="container text-center">
+        <div class="section-social">
+            <div class="row text-center" style="width: 360px!important; margin:0 auto;">
+                <div class="col"><a href="https://www.facebook.com/eazybottle/"><i class="fa fa-facebook-official"></i></a></div>
+                <div class="col"><a href="https://twitter.com/eazybottle"><i class="fa fa-twitter"></i></a></div>
+                <div class="col"><a href="https://www.linkedin.com/company/eazybottle"><i class="fa fa-linkedin-square"></i></a></div>
+                <div class="col"><a href="https://play.google.com/store/apps/details?id=com.eazybottle.android"><i class="fa fa-android"></i></a></div>
+            </div>
+        </div>
+        <!--End of Social-->
+        <section class="section-tabs">
+            <div class="float_center">
+                <ul class="child">
+                    <li>
+                        <a href="#/privacy">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <span> | </span><a href="#/terms">Terms of Use</a>
+                    </li>
+                    <li>
+                        <span> | </span><a href="#/refund">Refunds</a>
+                    </li>
+                    <li>
+                        <span> | </span><a href="#/jobs">Jobs</a>
+                    </li>
+                    <li>
+                        <span> | </span><a href="#/details">Partner</a>
+                    </li>
+                </ul>
+                <div class="child text-center">&copy; 2017 EazyBottle&trade; Private Limited</div>
+            </div>
+        </section>
+    </div>
+</section>

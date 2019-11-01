@@ -1,0 +1,139 @@
+
+html,
+body{
+    height: 100%;
+    font-family: 'Lato', sans-serif !important;
+    /*background-color: #E3F2FD;*/
+    background-image: url(../img/1.png);
+    background-repeat: repeat;
+}
+
+canvas{
+    background-color: black!important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.bg-particles{
+    width: 100%;
+    height: 100%;
+    margin: 0!important;
+    padding: 0!important;
+    background-color: black;
+}
+.header-custom{
+    opacity: 1!important;
+    background-color: rgb(52, 152, 219)!important;
+    background-image: linear-gradient(to left, rgb(44, 62, 80), rgb(52, 152, 219))!important;
+}
+.description{
+    color: aliceblue;
+	font: bold 1.2em 'Lato', sans-serif;
+    /*background-color: darkslategray;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;*/
+}
+.logo{
+    /*margin-top: 20px;*/
+    text-align: center;
+}
+.download{
+    color: lightcyan;
+    opacity: 1!important;
+    background-color: rgb(52, 152, 219)!important;
+    /*background-image: linear-gradient(to left, rgb(44, 62, 80), rgb(52, 152, 219))!important;*/
+}
+.phone-bg{
+    height: 500px;
+    background-image: url(../img/android.png);
+    background-repeat: no-repeat;
+}
+
+.section-padding{
+    padding-top: 40px;
+    /*background-color: #E3F2FD;*/
+}
+.section-social a:hover
+{
+    color: #1a1a1a;
+}
+.section-social a
+{
+    color: grey;
+} 
+
+.float_center {
+  float: right;
+  position: relative;
+  left: -50%; /* or right 50% */
+  text-align: left;
+}
+.float_center > .child {
+  position: relative;
+  left: 50%;
+}
+
+.section-tabs ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.section-tabs li {
+    float: left;
+}
+
+.section-tabs li a {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.copyright{
+    display: block
+}
+
+.section-tabs2 ul 
+{
+    display:block;
+    list-style-type:disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start:40px;
+}
+.section-tabs2 ul li
+{
+    display: list-item;
+    list-style-type: inherit;
+  
+}
+
+
+/* equal card height */
+.row-equal > div[class*='col-'] {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.row-equal .card {
+   width: 100%;
+}
+
+/* ensure equal card height inside carousel */
+.carousel-inner>.row-equal.active, 
+.carousel-inner>.row-equal.next, 
+.carousel-inner>.row-equal.prev {
+    display: flex;
+}
+
+/* prevent flicker during transition */
+.carousel-inner>.row-equal.active.left, 
+.carousel-inner>.row-equal.active.right {
+    opacity: 0.5;
+    display: flex;
+}
